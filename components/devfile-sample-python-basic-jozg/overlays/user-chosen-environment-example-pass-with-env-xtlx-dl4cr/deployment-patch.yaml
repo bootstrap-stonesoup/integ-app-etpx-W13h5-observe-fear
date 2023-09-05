@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-jozg
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: var_name
+          value: test
+        image: quay.io/bootstrap/integration-e2e-tenant/integ-app-etpx/devfile-sample-python-basic-jozg@sha256:16ed8c2095ca156d4e74eceea327721065fa4eb8d35d25c84a4166b95911fb0f
+        name: my-python
+        resources: {}
+status: {}
